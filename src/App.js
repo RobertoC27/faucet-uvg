@@ -20,7 +20,7 @@ class App extends Component {
     web3latest.eth.getAccounts().then((accounts) => {
       paying = accounts[0];
       return new web3latest.eth.Contract([{ "constant": false, "inputs": [], "name": "updateAvailable", "outputs": [], "payable": false, "stateMutability": "nonpayable", "type": "function" }, { "constant": true, "inputs": [], "name": "available", "outputs": [{ "name": "", "type": "bool" }], "payable": false, "stateMutability": "view", "type": "function" }, { "constant": false, "inputs": [{ "name": "_reciever", "type": "address" }], "name": "fundAccount", "outputs": [], "payable": true, "stateMutability": "payable", "type": "function" }, { "constant": true, "inputs": [], "name": "owner", "outputs": [{ "name": "", "type": "address" }], "payable": false, "stateMutability": "view", "type": "function" }, { "inputs": [], "payable": true, "stateMutability": "payable", "type": "constructor" }],
-        "0xf4fcf969983f829cb4970094b930b3a6045a636a")
+        "0xe8d329abfc6101cccbfbe939178fa2e5bf24e07e")
     }).then((instance) => {
       contract = instance;
 
